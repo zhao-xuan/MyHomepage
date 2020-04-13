@@ -339,7 +339,8 @@ ul, ol {
   background-image: url("../img/overlay.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .about-text h1 {
   margin-bottom: 40px;
@@ -351,8 +352,11 @@ ul, ol {
   line-height: 1.5;
   font-style: italic; }
 .about-text p {
-  margin-bottom: 30px; }
+  margin-bottom: 30px; 
+  color: darkslategrey;
+}
   .about-text p span {
+    font-weight: bold;
     color: #298ef6; }
 
 /*--------------------
