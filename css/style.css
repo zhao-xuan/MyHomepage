@@ -280,7 +280,7 @@ ul, ol {
 ----------------------*/
 .intro-section {
   height: 100%;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -312,7 +312,7 @@ ul, ol {
     .intro-content h2 span {
       font-weight: 700;
       color: #fff;
-      background-image: url("../img/text-bg.jpg");
+      background-image: url("../img/text-bg.jpeg");
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-position: center center;
