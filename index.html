@@ -48,7 +48,7 @@
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#resume">Resume</a></li>
-				<li><a href="#works">Works</a></li>
+				<li><a href="#works">Photo Gallery</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -99,7 +99,7 @@
 
 
 	<!-- Service section start -->
-	<section class="service-section spad">
+	<section class="service-section spad" id="resume">
 		<div class="container">
 			<div class="section-title">
 				<h2>About Me</h2>
@@ -115,7 +115,10 @@
 						<div class="service-content">
 							<div class="service-inner">
 								<h2>My Resume</h2>
-								<p></p>
+								<p><a href="www.google.com">Resume for Job/Work.</a><br />Related fields: Computer Graphics, Frontend & Backend, 
+								Digital Circuit Design, Machine Learning, etc.</p>
+								<p><a href="www.google.com">Resume as a Student.</a><br />Language Study, Photography, Mountain Biking/Running, 
+									Traveling, etc.</p>
 							</div>
 						</div>
 					</div>
@@ -130,10 +133,10 @@
 						<div class="service-content">
 							<div class="service-inner">
 								<h2>My Blog</h2>
-								<p>Gradient descent, tuning hyperparameters, convolutional neural networks,
-									reccurent neural networks, support vector machine, etc. Hough Transformation.
-									Click here to see my past development.
-								</p>
+								<p><a href="www.google.com">Tech Blog</a><br />Everything about the latest tech news.</p>
+								<p><a href="www.google.com">Life Blog</a><br />A log of my life. Starting from Aug. 2016.</p>
+								<p><a href="www.google.com">Study Blog</a><br />Imperial exam paper solutions, materials for 
+								college/intern application.</p>
 							</div>
 						</div>
 					</div>
@@ -148,7 +151,8 @@
 						<div class="service-content">
 							<div class="service-inner">
 								<h2>My Music Playlist</h2>
-								<p>Her companions instrument set estimating sen remarkably solicitude motionless property.</p>
+								<p><a href="www.google.com">Music Playlists</a><br />Japanese R&B, The 80s, Lo-fi, Pop.</p>
+								<p><a href="www.google.com">Music Reviews</a><br />Some words about the musics that I listen to.</p>
 							</div>
 						</div>
 					</div>
@@ -169,21 +173,53 @@
 				<div class="col-lg-8 offset-lg-2">
 					<!-- resume item -->
 					<div class="resume-item wow fadeInUp" data-wow-delay="0.3s">
+						<h2>Pulse Secure Software Engineer Summer Intern</h2>
+						<h3>10 weeks 2020 summer</h3>
+						<p>Responsible for the development of PulseUI which is potentially used across the company. 
+							Using React.js, Sass with tools such as Kubernete to build a reliable interface for VPN 
+							and analytic products.
+						</p>
+						<img src="img/pulsesecurelogo.jpg" />
+					</div>
+					<!-- resume item -->
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.3s">
 						<h2>CAD Connect</h2>
 						<h3>6 months 2019-2020</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Put rest and must set kind next many near nay.</p>
+						<p>A continuous project to build a cloud platform for AutoCAD. Designed RESTful API. 
+							Developed backend using Java with Spring framework and MySQL. Implemented authentication 
+							through Spring Security with JWT. Helped build frontend using React.js and Ant Design UI.</p>
+						<img src="img/autodesklogo.png" />
 					</div>
 					<!-- resume item -->
 					<div class="resume-item wow fadeInUp" data-wow-delay="0.3s">
-						<h2>Web designer & developer</h2>
-						<h3>3 years 2012-2015</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Put rest and must set kind next many near nay.</p>
+						<h2>LinguoMusic</h2>
+						<h3>ICHack20 Project</h3>
+						<p>A Music Player Helping People Learn New Languages. Collaborated with two undergraduates to create the NLP database and frontend.
+						Used React.js and related tools on npm to build the scrolling lyric with word-by-word translation
+						interface as well as the player.
+						Used Python and jiagu library to do natural language processing on lyrics, including tokenization and
+						word categorization, etc. Used Netease Music Box with Python to access music and lyric data.
+						<a href="https://devpost.com/software/linguomusic">Click here to view</a></p>
+						<img src="img/ichacklogo.png" />
 					</div>
 					<!-- resume item -->
 					<div class="resume-item wow fadeInUp" data-wow-delay="0.3s">
-						<h2>Mid-level designer</h2>
-						<h3>1 year 2011-2012</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Put rest and must set kind next many near nay.</p>
+						<h2>OpenWRT Internet Usage Monitor</h2>
+						<h3>November 2019</h3>
+						<p>An Add-on for OpenWRT system. Used JavaScript with chart.js, jQuery, and Bootstrap as the frontend, and Python with Flask and SQLite as the backend.
+						It can extract Internet usage information periodically from the OpenWRT router system for each host, including MAC 
+						address, download and upload statistics, and visualise it as a chart on a webpage.</p>
+						<img src="img/openwrtdemo.png" />
+					</div>
+					<!-- resume item -->
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.3s">
+						<h2>Imperial College London</h2>
+						<h3>September 2019</h3>
+						<p>Begin to study @ Imperial College London Department of Computing. Learned lots of new things: Haskell, Advanced Java Multithreading, 
+						SQL and Database Design, Computer Hardware & Architecture, Assembly and Compiler, etc.
+						</p>
+						<img src="img/imperiallogo1.jpg" style="display: inline-block; width: 55%"/>
+						<img src="img/imperiallogo2.png" style="display: inline-block; width: 40%; float: right;"/>
 					</div>
 				</div>
 			</div>
@@ -200,71 +236,72 @@
 			</div>
 			<ul class="portfolio-filter">
 				<li class="filter active" data-filter="*">All Photos</li>
-				<li class="filter" data-filter=".photo">San Francisco</li>
-				<li class="filter" data-filter=".brand">London</li>
-				<li class="filter" data-filter=".fs">New York</li>
+				<li class="filter" data-filter=".us">U.S.</li>
+				<li class="filter" data-filter=".uk">U.K. & Ireland</li>
+				<li class="filter" data-filter=".cn">China</li>
+				<li class="filter" data-filter=".jp">Japan</li>
 			</ul>
 			<div class="row isotope_items">
 				<!-- portfolio item -->
-				<div class="col-lg-4 col-md-6 photo">
+				<div class="col-lg-4 col-md-6 uk">
 					<a href="img/works/1.jpg" class="portfolio-item set-bg" data-setbg="img/works/1.jpg">
 						<div class="portfolio-text">
-							<h2>Cairs Root</h2>
-							<p>Photography</p>
+							<h2>Recent Collection</h2>
+							<p>London & Cambridge, England, U.K.</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-8 col-md-6 brand">
+				<div class="col-lg-8 col-md-6 us">
 					<a href="img/works/2.jpg" class="portfolio-item set-bg" data-setbg="img/works/2.jpg">
 						<div class="portfolio-text">
-							<h2>The Ghost</h2>
-							<p>Branding</p>
+							<h2>San Francisco</h2>
+							<p>Marin County & San Francisco, California, U.S.</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-4 col-md-6 fs">
+				<div class="col-lg-4 col-md-6 cn">
 					<a href="img/works/3.jpg" class="portfolio-item set-bg" data-setbg="img/works/3.jpg">
 						<div class="portfolio-text">
-							<h2>Kangoroo</h2>
-							<p>Fashion</p>
+							<h2>My Hometown</h2>
+							<p>Baotou, Inner Mongolia, China</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-4 col-md-6 photo">
+				<div class="col-lg-4 col-md-6 cn">
 					<a href="img/works/4.jpg" class="portfolio-item set-bg" data-setbg="img/works/4.jpg">
 						<div class="portfolio-text">
-							<h2>Red Tee</h2>
-							<p>Photography</p>
+							<h2>Beijing Landscape & Shanghai Teamlab</h2>
+							<p>Mainland China</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-4 col-md-12 brand">
+				<div class="col-lg-4 col-md-12 uk">
 					<a href="img/works/6.jpg" class="portfolio-item set-bg" data-setbg="img/works/6.jpg">
 						<div class="portfolio-text">
-							<h2>Owey Dewy</h2>
-							<p>Branding</p>
+							<h2>Ireland Journey</h2>
+							<p>Belfast, Dubline & Galway, Northern Ireland(U.K.) & Ireland</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-8 col-md-6 fs">
+				<div class="col-lg-8 col-md-6 jp">
 					<a href="img/works/7.jpg" class="portfolio-item set-bg" data-setbg="img/works/7.jpg">
 						<div class="portfolio-text">
-							<h2>Cool Blonde</h2>
-							<p>Fashion</p>
+							<h2>Japan Trip & Teamlab Infinite Space</h2>
+							<p>Tokyo, Japan</p>
 						</div>
 					</a>
 				</div>
 				<!-- portfolio item -->
-				<div class="col-lg-4 col-md-6 photo">
+				<div class="col-lg-4 col-md-6 us">
 					<a href="img/works/8.jpg" class="portfolio-item set-bg" data-setbg="img/works/8.jpg">
 						<div class="portfolio-text">
-							<h2>Belforte Fall</h2>
-							<p>Photography</p>
+							<h2>East Coast Collection</h2>
+							<p>New York & Ithaca, Philedelphia, Boston & more, U.S.</p>
 						</div>
 					</a>
 				</div>
@@ -282,16 +319,16 @@
 					<!-- testimonial item -->
 					<div class="single-testimonial">
 						<div class="qut">“</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum has been the Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
-						<h2>Maurice Pittman</h2>
-						<span>CEO of ABS Ltd.</span>
+						<p>To err is human. To really foul things up, you need a computer!</p>
+						<h2>Paul R. Ehrlich</h2>
+						<span>American scientist (1926 - Present)</span>
 					</div>
 					<!-- testimonial item -->
 					<div class="single-testimonial">
 						<div class="qut">“</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum has been the Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
-						<h2>Maurice Pittman</h2>
-						<span>CEO of ABS Ltd.</span>
+						<p>When something is important enough, you do it even if the odds are not in your favor.</p>
+						<h2>Elon Musk</h2>
+						<span>CEO & Founder of Tesla Ltd. & SpaceX</span>
 					</div>
 				</div>
 			</div>
@@ -306,8 +343,11 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
 					<div class="con-info wow fadeInUp" data-wow-delay="0.2s">
-						<p class="subtitle">Sydney</p>
-						<h2>300 South Main Street,<br> NSW 560, Australia. <br><br>+00 123 456 7890</h2>
+						<p class="subtitle">London</p>
+						<h2>28-32 Pembridge Gardens<br> London W2 4DX, United Kingdom. <br>
+							<br>UK Tel: +44 07421-471-909<br>
+							China Tel: +86 131-6178-8390<br>
+							US Tel: +1 415-827-3041</h2>
 					</div>
 					<!-- contact form -->
 					<form action="mail.php" method="POST" class="contact-form" id="contact-form">
@@ -343,7 +383,7 @@
                 <a href="#">behance </a>
                 <a href="#">dribbble  </a>
             </div>
-			<div class="copyright">Copyright © 2018 Vivid, All rights Reserved. <br> Created by BootExpress</div>
+			<div class="copyright">Copyright © 2020 Xuan(Tom) Zhao All Rights Reserved. <br> Created by Xuan(Tom) Zhao</div>
 		</div>
 	</footer>
 	<!-- Footer section start end -->

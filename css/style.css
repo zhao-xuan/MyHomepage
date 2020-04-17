@@ -53,6 +53,11 @@ textarea:focus,
 select:focus {
   outline: none; }
 
+a {
+  font-weight: bold;
+  color: #298ef6;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -436,7 +441,7 @@ ul, ol {
     height: 120%;
     left: -10%;
     top: -10%;
-    background-image: url("../img/backupbg1.jpg");
+    background-image: url("../img/aboutmebg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -444,7 +449,7 @@ ul, ol {
     filter: blur(16px); }
 
 .bg-1 {
-  background-image: url("../img/backupbg1.jpg"); }
+  background-image: url("../img/aboutmebg.jpg"); }
 
 /*--------------------
 	Resume Section
