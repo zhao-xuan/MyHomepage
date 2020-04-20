@@ -745,7 +745,7 @@ ul, ol {
     font-size: 14px; }
 
   .navigation-toggle {
-    right: 20px;
+    right: 10px;
   }
     
   .service-content:after {
@@ -757,18 +757,20 @@ ul, ol {
     top: -10%;
     background-image: url("../img/aboutmebg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: scroll;
     background-attachment: fixed;
     background-position: center;
     filter: blur(16px); 
   }
   
-  .bg-1 {
-    background-image: url("../img/aboutmebg.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 375px 812px;
-    background-repeat: repeat;
+  .bg-1-1 {
+    background-image: url("../img/aboutmeresume.jpg");
+  }
+  .bg-1-2 {
+    background-image: url("../img/aboutmeblog.jpeg");
+  }
+  .bg-1-3 {
+    background-image: url("../img/abouememusic.png");
   }
   }
 
