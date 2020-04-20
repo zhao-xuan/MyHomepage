@@ -743,7 +743,10 @@ ul, ol {
 
   .intro-content h3 {
     font-size: 14px; } 
-  
+  .bg-1 {
+    background-image: url(../img/aboutmebgmobile.jpg);
+  }
+
   }
 
 /*# sourceMappingURL=style.css.map */
