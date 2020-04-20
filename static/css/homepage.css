@@ -450,7 +450,8 @@ ul, ol {
     filter: blur(16px); }
 
 .bg-1 {
-  background-image: url("../img/aboutmebg.jpg"); }
+  background-image: url("../img/aboutmebg.jpg");
+}
 
 /*--------------------
 	Resume Section
