@@ -40,7 +40,19 @@
 		easing: 'swing'
 	});
 
-
+	/*------------------
+		Service Section
+	--------------------*/
+	$(".service-box").on('click', function(event) {
+		$(".service-content").attr("opacity", "1.0");
+		$(".service-icon").attr("opacity", "0");
+		event.preventDefault();
+	})
+	$(".service-box").on('blur', function(event) {
+		$(".service-content").attr("opacity", "0.0");
+		$(".service-icon").attr("opacity", "1");
+		event.preventDefault();
+	});
 
 	/*------------------
 		Background set

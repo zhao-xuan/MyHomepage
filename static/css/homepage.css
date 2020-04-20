@@ -742,11 +742,34 @@ ul, ol {
     font-size: 40px; }
 
   .intro-content h3 {
-    font-size: 14px; } 
-  .bg-1 {
-    background-image: url(../img/aboutmebgmobile.jpg);
-  }
+    font-size: 14px; }
 
+  .navigation-toggle {
+    right: 20px;
+  }
+    
+  .service-content:after {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    background-image: url("../img/aboutmebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(16px); 
+  }
+  
+  .bg-1 {
+    background-image: url("../img/aboutmebg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 375px 812px;
+    background-repeat: repeat;
+  }
   }
 
 /*# sourceMappingURL=style.css.map */
