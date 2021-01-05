@@ -1,109 +1,104 @@
 import React from 'react';
-import IsoTopeGrid from 'react-isotope';
-import { FaRegBell } from 'react-icons/fa';
+import UKCoverImage from '../../img/gallery/uk32.jpeg';
+import SFCoverImage from '../../img/gallery/sf11.jpeg';
+import BTCoverImage from '../../img/gallery/baotou28.jpeg';
+import CNCoverImage from '../../img/gallery/china42.jpeg';
+import RECoverImage from '../../img/gallery/ireland29.jpeg';
+import JPCoverImage from '../../img/gallery/japan14.jpeg';
+import USECoverImage from '../../img/gallery/useast44.jpeg';
+import Isotope from 'isotope-layout';
 
-const ImagePathContext = React.createContext('../../../static/img/');
+function FilterItem(props) {
+    return (
+        <li className={"filter" + (props.active ? " active" : "")} onClick={props.onClick}>{props.title}</li>
+    );
+}
 
 function PhotoGalleryItem(props) {
-    const classSetting = "col-lg-4 col-md-6 " + props.tag;
+    const classSetting = props.position + " " + props.tag;
+    const bgImageStyle = { backgroundImage : 'url(' + props.image + ')' }
     return  <div className={classSetting}>
-                <img href={props.imagePath} className="portfolio-item set-bg" data-setbg={props.imagePath} />
-                <div className="portfolio-text">
-                    <h2>{props.title}</h2>
-                    <p>{props.location}</p>
-                </div>
+                <a href={props.image} className="portfolio-item set-bg" style={bgImageStyle}>
+                    <div className="portfolio-text">
+                        <h2>{props.title}</h2>
+                        <p>{props.location}</p>
+                    </div>
+                </a>
             </div>
 }
 
 class PhotoGallery extends React.Component {
     items = [
         {
-            "filter" : ["uk"],
-            "row": 0,
-            "col": 0,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/uk32.jpeg",
-            "id" : "UK & Recent Collection"
-            //location : "London & Cambridge, England, U.K."
+            "filter" : "uk",
+            "image" : UKCoverImage,
+            "title" : "UK & Recent Collection",
+            "location" : "London & Cambridge, England, U.K.",
+            "position" : "col-lg-4 col-md-6"
         }, {
-            "filter" : ["us"],
-            "row": 0,
-            "col": 1,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/sf11.jpeg",
-            "id" : "San Francisco"
-            //location : "Marin County & San Francisco, California, U.S."
+            "filter" : "us",
+            "image" : SFCoverImage,
+            "title" : "San Francisco",
+            "location" : "Marin County & San Francisco, California, U.S.",
+            "position" : "col-lg-8 col-md-6"
         }, {
-            "filter" : ["cn"],
-            "row": 0,
-            "col": 2,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/baotou28.jpeg",
-            "id" : "My Hometown"
-            //location : "Baotou, Inner Mongolia, China"
+            "filter" : "cn",
+            "image" : BTCoverImage,
+            "title" : "My Hometown",
+            "location" : "Baotou, Inner Mongolia, China",
+            "position" : "col-lg-4 col-md-6"
         }, {
-            "filter" : ["cn"],
-            "row": 1,
-            "col": 0,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/china42.jpeg",
-            "id" : "Beijing, Shanghai, Hongkong"
-            //location : "Mainland China"
+            "filter" : "cn",
+            "image" : CNCoverImage,
+            "title" : "Beijing, Shanghai, Hongkong",
+            "location" : "Mainland China",
+            "position" : "col-lg-4 col-md-6"
         }, {
-            "filter" : ["uk"],
-            "row": 1,
-            "col": 1,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/ireland29.jpeg",
-            "id" : "Ireland Journey"
-            //location : "Belfast, Dubline & Galway, Northern Ireland(U.K.) & Ireland"
+            "filter" : "uk",
+            "image" : RECoverImage,
+            "title" : "Ireland Journey",
+            "location" : "Belfast, Dubline & Galway, Northern Ireland(U.K.) & Ireland",
+            "position" : "col-lg-4 col-md-12"
         }, {
-            "filter" : ["jp"],
-            "row": 1,
-            "col": 2,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/japan14.jpeg",
-            "id" : "Japan Trip & Teamlab"
-            //location : "Tokyo, Japan"
+            "filter" : "jp",
+            "image" : JPCoverImage,
+            "title" : "Japan Trip & Teamlab",
+            "location" : "Tokyo, Japan",
+            "position" : "col-lg-8 col-md-6"
         }, {
-            "filter" : ["us"],
-            "row": 2,
-            "col": 0,
-            "w": 1,
-            "h": 1,
-            //imagePath : "/../../img/gallery/useast44.jpeg",
-            "id" : "East Coast Collection"
-            //location : "New York & Ithaca, Philedelphia, Boston & more, U.S."
+            "filter" : "us",
+            "image" : USECoverImage,
+            "title" : "East Coast Collection",
+            "location" : "New York & Ithaca, Philedelphia, Boston & more, U.S.",
+            "position" : "col-lg-4 col-md-6"
         }
     ]
 
     filters = [
-        { "name" : "All Photos", "label" : "*", "isChecked" : true },
-        { "name" : "U.S.", "label" : "us", "isChecked" : false },
-        { "name" : "U.K & Ireland", "label" : "uk", "isChecked" : false },
-        { "name" : "China", "label" : "cn", "isChecked" : false },
-        { "name" : "Japan", "label" : "jp", "isChecked" : false }
+        { "name" : "All Photos", "label" : "*" },
+        { "name" : "U.S.", "label" : ".us" },
+        { "name" : "U.K & Ireland", "label" : ".uk" },
+        { "name" : "China", "label" : ".cn" },
+        { "name" : "Japan", "label" : ".jp" }
     ]
 
-    constructor (props) {
-        super(props);
+    state = {
+        filter : "*",
+        isotope : null
     }
 
-    onFilter(event) {
-        const {
-            target: { value, checked }
-        } = event;
+    componentDidMount() {
+        if (!this.state.isotope) {
+            const node = document.querySelector(".isotope_items");
+            this.setState({isotope : new Isotope(node)});
+        }
+    }
 
-        const filter = this.state.filters;
-        filter.map((i, f) => {filter[i].isChecked = f.label === value ? true : false;});
-        this.setState({filters : filter});
-    };
+    onChangeFilter(filterLabel) {
+        this.state.isotope.arrange({
+            filter : filterLabel
+        });
+    }
 
     render() {
         return (
@@ -114,34 +109,29 @@ class PhotoGallery extends React.Component {
                     </div>
 
                     <div>
-                        <ul className="portfolio-filter">
-                            {this.filters.map(f => (
-                            
-                                <li
-                                key={`${f.label}_key`}
-                                id={f.label}
-                                value={f.label}
-                                onChange={this.onFilter}
-                                checked={f.isChecked}
-                                >
-                                <label htmlFor={f.label}>{f.name}</label>
-                                </li>
-                            ))}
-                        </ul>
+                    <ul className="portfolio-filter">
+                        {this.filters.map((item) => (
+                            <FilterItem active={this.state.filter === item.label}
+                                        onClick={() => {
+                                            this.setState({filter : item.label});
+                                            this.onChangeFilter(item.label);
+                                        }}
+                                        filter={item.label}
+                                        title={item.name} />
+                    ))}
+                    </ul>
+                    
                     </div>
 
                     <div className="row isotope_items">
-                        <IsoTopeGrid
-                            gridLayout={this.items}
-                            noOfCols={3}
-                            unitWidth={200}
-                            unitHeight={200}
-                            filters={this.filters}
-                        >
                             {this.items.map(item => (
-                                <a>something</a>
+                                <PhotoGalleryItem key={item.title}
+                                                  tag={item.filter}
+                                                  image={item.image}
+                                                  title={item.title}
+                                                  location={item.location}
+                                                  position={item.position} />
                             ))}
-                        </IsoTopeGrid>
                     </div>
                 </div>
             </section>

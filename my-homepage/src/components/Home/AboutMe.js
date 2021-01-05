@@ -1,14 +1,6 @@
 import React from 'react';
 import '../../css/homepage.css';
 import Me from '../../img/me.jpeg';
-import Overlay from '../../img/me.jpeg';
-
-var aboutMeStyle = {
-    backgroundImage: "url(../img/overlay.jpg)",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center"
-  }
 
 class AboutMe extends React.Component {
     portraitPath = Me;

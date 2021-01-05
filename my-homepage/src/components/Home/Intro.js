@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/homepage.css';
+import Navigation from '../Common/Navigation'
 import Particles from 'react-particles-js';
 
 class Intro extends React.Component {
@@ -21,10 +22,10 @@ class Intro extends React.Component {
                               }
                             ,
                             "number": {
-                                "value": 150
+                                "value": 200
                             },
                             "size": {
-                                "value": 2
+                                "value": 1
                             },
                             "density": {
                                 "enable": false

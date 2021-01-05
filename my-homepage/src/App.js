@@ -11,23 +11,19 @@ import Testimonial from './components/Common/Testimonial';
 import Contact from './components/Common/Contact';
 import Footer from './components/Common/Footer';
 
-const ImagePathContext = React.createContext('../../static/img/');
-
 function MyHomepage() {
   return (
     <div className="myHomepage">
-      <ImagePathContext.Provider value="../..//static/img/">
-        <Preloader />
-        <Navigation />
-        <Intro />
-        <AboutMe />
-        <Skill />
-        <Activity />
-        <PhotoGallery />
-        <Testimonial />
-        <Contact />
-        <Footer />
-      </ImagePathContext.Provider>
+      <Preloader />
+      <Navigation />
+      <Intro />
+      <AboutMe />
+      <Skill />
+      <Activity />
+      <PhotoGallery />
+      <Testimonial />
+      <Contact />
+      <Footer />
     </div>
   );
 }
