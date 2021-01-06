@@ -11,7 +11,7 @@ import Testimonial from '../Common/Testimonial';
 import Contact from '../Common/Contact';
 import Footer from '../Common/Footer';
 
-class MyHomepage extends React.Component {
+class Homepage extends React.Component {
     render() {
         return (
             <div className="myHomepage">
@@ -30,4 +30,4 @@ class MyHomepage extends React.Component {
     }
 }
 
-export default MyHomepage;
+export default Homepage;
