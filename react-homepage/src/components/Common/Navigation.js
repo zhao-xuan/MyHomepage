@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faGithub, faLinkedin, faWeixin, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function MenuList() {
     return <ul className="menu-list">
@@ -14,10 +15,13 @@ function MenuList() {
 
 function SocialLinks() {
     return <div className="social-links">
-                <a href="https://www.facebook.com/xuan.zhao.14019"><FontAwesomeIcon className="fa fa-facebook" /></a>
-                <a href="https://www.instagram.com/tomzhao1999"><FontAwesomeIcon className="fa fa-instagram" /></a>
-                <a href="https://www.github.com/zhao-xuan"><FontAwesomeIcon className="fa fa-github" /></a>
-                <a href="https://www.linkedin.com/in/zhaoxuan0914/"><FontAwesomeIcon className="fa fa-linkedin" /></a>
+                <a href="https://www.facebook.com/xuan.zhao.14019"><FontAwesomeIcon icon={faFacebook} /></a>
+                <a href="https://www.instagram.com/tomzhao1999"><FontAwesomeIcon icon={faInstagram} /></a>
+                <a href="https://www.github.com/zhao-xuan"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/zhaoxuan0914/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="#top" onClick={() => {alert("My WeChat ID: BetaXuan")}}><FontAwesomeIcon icon={faWeixin} /></a>
+                <a href="https://t.me/tomzhao0914"><FontAwesomeIcon icon={faTelegram} /></a>
+                <a href="https://wa.me/447421471909"><FontAwesomeIcon icon={faWhatsapp} /></a>
            </div>;
 }
 

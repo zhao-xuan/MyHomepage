@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../css/homepage.css';
-import Navigation from '../Common/Navigation'
 import Particles from 'react-particles-js';
 
 class Intro extends React.Component {

@@ -90,72 +90,9 @@
 		return false;
 	});
 
-
-
-	/*------------------
-		Testimonial
-	--------------------*/
-	$('#test_slider').owlCarousel({
-		dots: false,
-		nav: true,
-		loop: true,
-		margin:30,
-		smartSpeed: 700,
-		items:1,
-		autoplay:true,
-		navText: ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>']
-	});
-
-
 	/*------------------
 		WOW JS
 	--------------------*/
 	new WOW().init();
 
-
-	/*------------------
-		CONTACT FORM
-	--------------------*/
-	$('#contact-form').on('submit', function() {
-		var send_btn = $('#send-form'),
-			form = $(this),
-			formdata = $(this).serialize(),
-			chack = $('#form-chack');
-			send_btn.text('Wait...');
-
-		function reset_form(){
-		 	$("#name").val('');
-			$("#email").val('');
-			$("#massage").val('');
-		}
-
-		$.ajax({
-			url:  $(form).attr('action'),
-			type: 'POST',
-			data: formdata,
-			success : function(text){
-				if (text == "success"){
-					send_btn.addClass('done');
-					send_btn.text('Success');
-					setTimeout(function() {
-						reset_form();
-						send_btn.removeClass('done');
-						send_btn.text('Send Massage');
-					}, 3000);
-				}
-				else {
-					reset_form();
-					send_btn.addClass('error');
-					send_btn.text('Error');
-					setTimeout(function() {
-						send_btn.removeClass('error');
-						send_btn.text('Send Massage');
-					}, 5000);
-				}
-			}
-		});
-		return false;
-	});
-
-	
 })(jQuery);
