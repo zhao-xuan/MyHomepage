@@ -26,7 +26,7 @@ class Contact extends React.Component {
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="con-info wow fadeInUp" data-wow-delay="0.2s">
-                                <p className="subtitle">London</p>
+                                <p className="subtitle">Contact Me</p>
                                 <h2>If you need to contact me, please enter details below and hit Send Message</h2>
                             </div>
 

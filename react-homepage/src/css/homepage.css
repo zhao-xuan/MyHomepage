@@ -254,7 +254,7 @@ ul, ol {
   top: 80px;
   transition: all 0.3s ease 0s; }
   .main-manu ul {
-    height: 250px;
+    height: 500px;
     overflow-y: auto;
     list-style: none; }
   .main-manu a {

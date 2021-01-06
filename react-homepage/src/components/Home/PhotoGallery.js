@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import UKCoverImage from '../../img/gallery/uk32.jpeg';
 import SFCoverImage from '../../img/gallery/sf11.jpeg';
 import BTCoverImage from '../../img/gallery/baotou28.jpeg';
@@ -18,12 +19,12 @@ function PhotoGalleryItem(props) {
     const classSetting = props.position + " " + props.tag;
     const bgImageStyle = { backgroundImage : 'url(' + props.image + ')' }
     return  <div className={classSetting}>
-                <a href={props.image} className="portfolio-item set-bg" style={bgImageStyle}>
+                <Link to="/gallery#top" href={props.image} className="portfolio-item set-bg" style={bgImageStyle}>
                     <div className="portfolio-text">
                         <h2>{props.title}</h2>
                         <p>{props.location}</p>
                     </div>
-                </a>
+                </Link>
             </div>
 }
 

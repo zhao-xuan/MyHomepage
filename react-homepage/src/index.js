@@ -1,11 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './index.css';
-import MyHomepage from './App';
+import './css/homepage.css';
+import Homepage from './components/Home/Homepage';
+import Gallery from './components/Gallery/Gallery';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <MyHomepage />,
+  <Router>
+    <Switch>
+      <Route path="/gallery">
+        <Gallery title="All Photos" />
+      </Route>
+      <Route path="/">
+        <Homepage />
+      </Route>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
