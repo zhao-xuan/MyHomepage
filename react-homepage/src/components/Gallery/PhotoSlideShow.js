@@ -7,16 +7,19 @@ class PhotoSlideShow extends React.Component {
     render() {
         const images = [
             {
-                original: Baotou,
-                thumbnail: Baotou,
+                original: "https://tomzhao.me/picture/baotou/baotou1.jpeg",
+                thumbnail: "https://tomzhao.me/picture_thumb/baotou/baotou1.jpeg",
+                description: "This is my hometown"
             },
             {
-                original: 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/6.jpg',
-                thumbnail: 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/6.jpg'
+                original: 'https://tomzhao.me/picture/baotou/baotou2.jpeg',
+                thumbnail: 'https://tomzhao.me/picture_thumb/baotou/baotou2.jpeg',
+                description: "This is my hometown"
             },
             {
-                original: 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/6.jpg',
-                thumbnail: 'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/6.jpg'
+                original: 'https://tomzhao.me/picture/baotou/baotou3.jpeg',
+                thumbnail: 'https://tomzhao.me/picture_thumb/baotou/baotou3.jpeg',
+                description: "This is my hometown"
             }
         ]
 
