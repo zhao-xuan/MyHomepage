@@ -8,13 +8,29 @@ import PhotoGallery from '../Common/PhotoGallery';
 import Contact from '../Common/Contact';
 import Footer from '../Common/Footer';
 import '../../css/homepage.css';
+import Homepage from '../Home/Homepage';
 
 function Gallery() {
     let { title } = useParams();
+    
+    const gallery_nav_menulist = [
+        {
+            "link": "https://tomzhao.me",
+            "menutitle": "Home"
+        },
+        {
+            "link": "#gallery-intro",
+            "menutitle": "Introduction"
+        },
+        {
+            "link": "#works",
+            "menutitle": "Other Gallery"
+        },
+    ]
 
     return (
         <div className="myGallery">
-            <Navigation />
+            <Navigation menulist={gallery_nav_menulist}/>
             <GalleryHeader title={title} />
             <PhotoSlideShow folder={title} />
             <GalleryIntro folder={title}/>

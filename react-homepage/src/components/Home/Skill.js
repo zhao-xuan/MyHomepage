@@ -19,12 +19,12 @@ function SkillSection(props) {
     );
 
     return  <div className="col-md-4">
-                <div className="service-box bg-1 bg-1-1 wow fadeInUp" data-wow-delay="0.2s">
+                <div className={`service-box bg-1 wow fadeInUp ${props.mobilebgclass}`} data-wow-delay="0.2s">
                     <div className="service-icon">
                         {props.icon}
                         <h2>{props.section}</h2>
                     </div>
-                    <div className="service-content" id="service-content-1">
+                    <div className="service-content" id={props.mobilebgid}>
                         <div className="service-inner">
                             <h2>{props.section}</h2>
                             {itemList}
@@ -39,6 +39,8 @@ class Skill extends React.Component {
         {
             icon : <FaFile />,
             section : "My Resume",
+            mobilebgclass : "bg-1-1",
+            mobilebgid : "service-content-1",
             itemList : [
                 {
                     link : "http://blog.tomzhao.me/wp-content/uploads/2020/05/resume0410.pdf",
@@ -53,6 +55,8 @@ class Skill extends React.Component {
         }, {
             icon : <FaWordpress />,
             section : "My Blog",
+            mobilebgclass : "bg-1-2",
+            mobilebgid : "service-content-2",
             itemList : [
                 {
                     link : "http://blog.tomzhao.me/?page_id=58",
@@ -71,6 +75,8 @@ class Skill extends React.Component {
         }, {
             icon : <FaHeadphones />,
             section : "My Music Playlist",
+            mobilebgclass : "bg-1-3",
+            mobilebgid : "service-content-3",
             itemList : [
                 {
                     link : "https://music.apple.com/us/playlist/replay-2019/pl.rp-ARRXsbJlG0n",
@@ -94,7 +100,9 @@ class Skill extends React.Component {
                     </div>
                     <div className="row">
                         {this.sectionList.map((item) =>
-                            <SkillSection icon={item.icon} section={item.section} itemList={item.itemList}/>
+                            <SkillSection icon={item.icon} section={item.section} 
+                                itemList={item.itemList} mobilebgclass={item.mobilebgclass} 
+                                mobilebgid={item.mobilebgid}/>
                         )}
                     </div>
                 </div>

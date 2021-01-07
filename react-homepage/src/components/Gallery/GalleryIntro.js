@@ -34,7 +34,7 @@ const gallery_intro = {
 function GalleryIntro(props) {
     return (
         <section className="testimonial-section spad">
-            <div className="container">
+            <div className="container" id="gallery-intro">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2" id="test_slider">
                         <div className="single-testimonial">

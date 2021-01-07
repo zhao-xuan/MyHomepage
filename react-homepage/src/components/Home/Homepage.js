@@ -13,10 +13,36 @@ import Footer from '../Common/Footer';
 
 class Homepage extends React.Component {
     render() {
+        const homepage_nav_menu_list = [
+            {
+                "link": "#home",
+                "menutitle": "Home"
+            },
+            {
+                "link": "#about",
+                "menutitle": "About"
+            },
+            {
+                "link": "#resume",
+                "menutitle": "Resume"
+            },
+            {
+                "link": "#works",
+                "menutitle": "Photo Gallery"
+            },
+            {
+                "link": "#contact",
+                "menutitle": "Contact"
+            },
+            {
+                "link": "#about",
+                "menutitle": "About"
+            },
+        ]
         return (
             <div className="myHomepage">
                 <Preloader />
-                <Navigation />
+                <Navigation menulist={homepage_nav_menu_list} />
                 <Intro />
                 <AboutMe />
                 <Skill />

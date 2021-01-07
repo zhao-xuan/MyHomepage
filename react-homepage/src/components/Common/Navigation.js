@@ -3,13 +3,11 @@ import '../../css/homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faGithub, faLinkedin, faWeixin, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-function MenuList() {
+function MenuList(props) {
     return <ul className="menu-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#works">Photo Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                {props.menulist.map((item) => (
+                    <li><a href={item.link}>{item.menutitle}</a></li>
+                 ))}
            </ul>;
 }
 
@@ -52,7 +50,7 @@ class Navigation extends React.Component {
                 </div>
                 <div className="close-nav" onClick={this.onCloseNavigation}>+</div>
                 <nav className="main-manu">
-                    <MenuList />
+                    <MenuList menulist={this.props.menulist}/>
                 </nav>
                 <SocialLinks />
             </div>
