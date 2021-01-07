@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import GalleryHeader from '../Gallery/GalleryHeader';
 import PhotoSlideShow from '../Gallery/PhotoSlideShow';
 import Navigation from '../Common/Navigation';
-import Testimonial from '../Common/Testimonial';
+import GalleryIntro from './GalleryIntro';
+import PhotoGallery from '../Common/PhotoGallery';
 import Contact from '../Common/Contact';
 import Footer from '../Common/Footer';
 import '../../css/homepage.css';
@@ -11,18 +12,17 @@ import '../../css/homepage.css';
 function Gallery() {
     let { title } = useParams();
 
-    // render() {
-        return (
-            <div className="myGallery">
-                <Navigation />
-                <GalleryHeader title={title} />
-                <PhotoSlideShow />
-                <Testimonial />
-                <Contact />
-                <Footer />
-            </div>
-        )
-    // }
+    return (
+        <div className="myGallery">
+            <Navigation />
+            <GalleryHeader title={title} />
+            <PhotoSlideShow folder={title} />
+            <GalleryIntro folder={title}/>
+            <PhotoGallery title={"Other Photo Gallery"} />
+            <Contact />
+            <Footer />
+        </div>
+    )
 }
 
 export default Gallery;

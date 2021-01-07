@@ -5,7 +5,7 @@ import Intro from './Intro';
 import AboutMe from './AboutMe';
 import Skill from './Skill';
 import Activity from './Activity';
-import PhotoGallery from './PhotoGallery';
+import PhotoGallery from '../Common/PhotoGallery';
 import Navigation from '../Common/Navigation';
 import Testimonial from '../Common/Testimonial';
 import Contact from '../Common/Contact';
@@ -21,7 +21,7 @@ class Homepage extends React.Component {
                 <AboutMe />
                 <Skill />
                 <Activity />
-                <PhotoGallery />
+                <PhotoGallery title={"My Photos"} />
                 <Testimonial />
                 <Contact />
                 <Footer />

@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoGallery from '../Home/PhotoGallery';
+import PhotoGallery from '../Common/PhotoGallery';
 
 class GalleryHeader extends React.Component {
     render() {

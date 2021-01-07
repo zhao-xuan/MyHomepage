@@ -54,7 +54,7 @@ class PhotoGallery extends React.Component {
             "filter": "cn",
             "image": CNCoverImage,
             "title": "Beijing, Shanghai, Hongkong",
-            "location": "Mainland China",
+            "location": "Asian Pacific",
             "position": "col-lg-4 col-md-6"
         }, {
             "filter": "uk",
@@ -108,7 +108,7 @@ class PhotoGallery extends React.Component {
             <section className="portfolio-section spad" id="works">
                 <div className="container">
                     <div className="section-title">
-                        <h2>My Photo Gallery</h2>
+                        <h2>{this.props.title}</h2>
                     </div>
 
                     <div>
