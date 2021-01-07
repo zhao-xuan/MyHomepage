@@ -43,7 +43,7 @@ class Skill extends React.Component {
             mobilebgid : "service-content-1",
             itemList : [
                 {
-                    link : "http://blog.tomzhao.me/wp-content/uploads/2020/05/resume0410.pdf",
+                    link : "https://blog.tomzhao.me/wp-content/uploads/2021/01/resume1003en.pdf",
                     title : "Resume for Job/Work.",
                     description : "Related fields: Computer Graphics, Frontend & Backend, Digital Circuit Design, Machine Learning, etc."
                 }, {
