@@ -8,6 +8,7 @@ class GalleryHeader extends React.Component {
                 <div className="container">
                     <div className="section-title">
                         <h2>{this.props.title}</h2>
+                        <h6>Taken by Tom Zhao</h6>
                     </div>
                 </div>
             </section>
