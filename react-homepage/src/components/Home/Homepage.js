@@ -34,10 +34,6 @@ class Homepage extends React.Component {
                 "link": "#contact",
                 "menutitle": "Contact"
             },
-            {
-                "link": "#about",
-                "menutitle": "About"
-            },
         ]
         return (
             <div className="myHomepage">
