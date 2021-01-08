@@ -8,7 +8,6 @@ import PhotoGallery from '../Common/PhotoGallery';
 import Contact from '../Common/Contact';
 import Footer from '../Common/Footer';
 import '../../css/homepage.css';
-import Homepage from '../Home/Homepage';
 
 function Gallery() {
     let { title } = useParams();
