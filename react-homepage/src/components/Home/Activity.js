@@ -48,7 +48,7 @@ class Activity extends React.Component {
                                    include writing new features for DumaOS, maintaining DumaOS and working with ODMs and
                                    chipset manufactures to port DumaOS to new hardware.`,
             activityImage : NetdumaLogo,
-            padding: 100,
+            padding: 20,
             link : {
                 text : "See here for the company website",
                 link : "https://netduma.com"
@@ -62,7 +62,7 @@ class Activity extends React.Component {
                                    the Qualcomm Hexagon DSP module and Camss module from the codeaurora branch into the AOSP mainline 
                                    kernel.`,
             activityImage : AdapsPhotonicsLogo,
-            padding: 100,
+            padding: 30,
             link : {
                 text : "See here for the company website",
                 link : "http://adapsphotonics.com"
